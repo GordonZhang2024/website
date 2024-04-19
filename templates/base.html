@@ -8,8 +8,10 @@
         {% block title %} {% endblock %}
         <center>
             <nav>
-                <a href={{ url_for('index') }}>Home</a>
-                <a href={{ url_for('projects') }}>Projects</a>
+                <ul>
+                    <a href={{ url_for('index') }}>Home</a>
+                    <a href={{ url_for('projects') }}>Projects</a>
+                </ul>
             </nav>
         </center>
         {% block content %} {% endblock %}
