@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    <h1>Gordon Zhang's projects</h1>
+{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for name, url in projects_list.items() %}
+            <li><a href={{ url }}>{{ name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

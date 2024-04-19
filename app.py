@@ -1,11 +1,16 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
+
+projects_list ={
+    'tkMarker': 'github.com/GordonZhang2024/tkMarker/'
+}
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/projects/tkMarker')
-def tkmarker():
-    return render_template('tkMarker/index.html')
+@app.route('/projects/')
+def projects():
+    return render_template('projects.html', projects_list=projects_list)
+

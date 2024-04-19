@@ -1,0 +1,17 @@
+<html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    </head>
+        <body>
+                <title>Gordon Zhang's website</title>
+        {% block title %} {% endblock %}
+        <center>
+            <nav>
+                <a href={{ url_for('index') }}>Home</a>
+                <a href={{ url_for('projects') }}>Projects</a>
+            </nav>
+        </center>
+        {% block content %} {% endblock %}
+        </body>
+</html>
