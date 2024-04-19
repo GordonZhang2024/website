@@ -3,7 +3,7 @@ from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 projects_list ={
-    'tkMarker': 'github.com/GordonZhang2024/tkMarker/'
+    'tkMarker: A Markdown editor using tkinter': 'github.com/GordonZhang2024/tkMarker/'
 }
 
 @app.route('/')
