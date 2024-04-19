@@ -6,7 +6,11 @@
 {% block content %}
     <ul>
         {% for name, url in projects_list.items() %}
-            <li><a href={{ url }}>{{ name }}</a></li>
+        <span class="float-right">
+            <li>
+                <a href={{ url }}>{{ name }}</a>
+            </li>
+        </span>
         {% endfor %}
     </ul>
 {% endblock %}
