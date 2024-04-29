@@ -1,9 +1,9 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, send_file
 
 app = Flask(__name__)
 
 projects_list ={
-        'tkMarker: A Markdown editor using tkinter': 'https://github.com/GordonZhang2024/tkMarker/',
+        'tkMarker: A Markdown editor using tkinter': ' https://gordonzhang.pythonanywhere.com/projects/tkMarker/',
         'GordonZhang2024/website: The source files of this website': 'https://github.com/GordonZhang2024/website/'
 }
 
@@ -15,3 +15,14 @@ def index():
 def projects():
     return render_template('projects.html', projects_list=projects_list)
 
+@app.route('/projects/tkMarker/')
+def tkmarker():
+    return render_template('tkmarker.html')
+
+@app.route('/robots.txt')
+def robotstxt():
+    return send_file('robots.txt')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_file('sitemap.xml')
