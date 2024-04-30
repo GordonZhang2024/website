@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 projects_list = {
         'tkMarker | A Markdown editor': ' https://gordonzhang.pythonanywhere.com/projects/tkMarker/',
-        'GordonZhang2024/website | The source files of this website': 'https://github.com/GordonZhang2024/website/'
+        'GordonZhang2024/website | The source files of this website': 'https://github.com/GordonZhang2024/website/',
+        'xss shield | A python library which is used to stop your website from being attacked.': 'https://pypi.org/project/xss-shield/'
 }
 
 @app.route('/')
