@@ -1,4 +1,7 @@
 html {
-    font-family: consolas;
+    font-family: "Sans-Serif";
 }
 
+a {
+	color: blue;
+}
