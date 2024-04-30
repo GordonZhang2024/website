@@ -3,8 +3,8 @@ from flask import Flask, render_template, url_for, send_file
 app = Flask(__name__)
 
 projects_list ={
-        'tkMarker: A Markdown editor using tkinter': ' https://gordonzhang.pythonanywhere.com/projects/tkMarker/',
-        'GordonZhang2024/website: The source files of this website': 'https://github.com/GordonZhang2024/website/'
+        'tkMarker | A Markdown editor': ' https://gordonzhang.pythonanywhere.com/projects/tkMarker/',
+        'GordonZhang2024/website | The source files of this website': 'https://github.com/GordonZhang2024/website/'
 }
 
 @app.route('/')

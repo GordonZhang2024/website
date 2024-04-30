@@ -8,15 +8,19 @@
 
 
 <url>
-  <loc>http://gordonzhang.pythonanywhere.com/</loc>
-  <lastmod>2024-04-29T12:49:01+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>https://gordonzhang.pythonanywhere.com/</loc>
+  <lastmod>2024-04-29T22:48:47+00:00</lastmod>
+  <priority>0.60</priority>
 </url>
 <url>
-  <loc>http://gordonzhang.pythonanywhere.com/projects/</loc>
-  <lastmod>2024-04-29T12:49:01+00:00</lastmod>
+  <loc>https://gordonzhang.pythonanywhere.com/projects/</loc>
+  <lastmod>2024-04-29T22:48:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+    <loc>https://gordonzhang.pythonanywhere.com/projects/tkMarker/</loc>
+    <lastmod>2024-04-29T22:48:47+00:00</lastmod>
+    <priority>1.00</priority>
+</url>
 
 </urlset>
