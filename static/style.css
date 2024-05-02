@@ -1,7 +1,22 @@
 html {
-    font-family: "Sans-Serif";
+    font-family: Sans-serif;
 }
 
 a {
-	color: blue;
+    color: #054096;
+}
+
+.info {
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+nav {
+    background-image: linear-gradient(90deg, #0250bb, #00ddff);
+    border-radius: 5px;
+}
+
+nav a {
+   color: white;
 }
