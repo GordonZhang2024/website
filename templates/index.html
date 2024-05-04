@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}
     <h1>Hello from Gordon Zhang!</h1>
+    <h2 class="subtitle">Gordon Zhang's website</h2>
 {% endblock %}
 {% block content %}
 
@@ -8,14 +9,34 @@
 
   <body>
     <div class="info">
-      <ul>
-  <li>👋 Hi, I’m Gordon Zhang</li>
-  <li><a href="https://github.com/GordonZhang2024">GitHub</a></li>
-  <li><a href="https://gordonzhang.pythonanywhere.com/">My website</a></li>
-  <li><a href="https://pypi.org/user/GordonZhang/">PyPI profile</a></li>
-</ul>
-
+        <ul>
+            <li>👋 <strong>Hi, I’m Gordon Zhang.</strong></li>
+            <li>
+                <strong><a href="https://github.com/GordonZhang2024">Follow me on GitHub!</a></strong>
+            </li>
+            <li><a href="https://pypi.org/user/GordonZhang/">PyPI profile</a></li>
+        </ul>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+
+    <div class="pinned_projects">
+        &emsp;<h2>Pinned projects</h2>
+        &emsp;<a href=https://gordonzhang.pythonanywhere.com/projects/tkMarker/>tkMarker | A Markdown editor</a><br/>
+        &emsp;<a href=https://gordonzhang.pythonanywhere.com/projects/>More</a>
+    </div>
+    <br/>
+    <hr/>
+
+    <div class="news">
+        <h2>News</h2>
+        <ul>
+            <li>
+                <a href=https://github.com/GordonZhang2024/tkMarker/releases>TkMarker v1.2 released!🎉</a>
+            </li>
+            <li>
+                <a href=https://pypi.org/project/xss-shield/>XSS-shield v1.1 released.</a>
+            </li>
+        </ul>
+    </div>
+
     <script>anchors.add();</script>
 {% endblock %}

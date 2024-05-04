@@ -6,6 +6,10 @@ a {
     color: #054096;
 }
 
+.subtitle {
+    color: SlateGrey;
+}
+
 nav {
     background-image: linear-gradient(90deg, #0250bb, #00ddff);
     border-radius: 5px;
@@ -26,4 +30,31 @@ nav a {
 }
 
 
+.info {
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: blue;
+    float: left;
+    margin: 10px;
+}
 
+.follow {
+    float: right;
+}
+
+.follow button {
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.pinned_projects {
+    fload: center;
+}
+
+
+footer {
+    background: #00BFFF;
+    color: white;
+    border-radius: 5px;
+}

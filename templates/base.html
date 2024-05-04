@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-        <head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv='content-language' content='en-us'>
         <meta name="msvalidate.01" content="9E22466DFA29674DB865F9840674D609" />
@@ -8,8 +8,16 @@
         <meta name="keywords" content="Gordon Zhang">
         <meta name="author" content="Gordon Zhang">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
-    <title>Gordon Zhang's website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+        <title>Gordon Zhang's website</title>
+        <script>
+            function about() {
+                alert("This is Gordon Zhang's website.")
+            }
+            function source() {
+                window.open("https://github.com/GordonZhang2024/website/")
+            }
+        </script>
     </head>
         <body>
 
@@ -21,5 +29,12 @@
             </nav>
         </center>
         {% block content %} {% endblock %}
+        <br/><br/>
+        <footer>
+            <center>
+                <text onclick=about()>About</text>
+                &emsp;<text onclick=source()>Source files</text>
+            </center>
+        </footer>
         </body>
 </html>
