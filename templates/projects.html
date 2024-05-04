@@ -5,12 +5,13 @@
 
 {% block content %}
     <ul>
-        {% for name, url in projects_list.items() %}
-        <span class="float-right">
+        {% for p in projects_list %}
+        <span class="projects">
             <li>
-               <a href={{ url }}>{{ name }}</a>
+               <a href={{ p[1] }}>{{ p[0] }}</a><br/>
             </li>
         </span>
         {% endfor %}
     </ul>
+        <button id="repos"><a href="https://github.com/GordonZhang2024?tab=repositories">More</a></button>
 {% endblock %}

@@ -1,12 +1,15 @@
 from flask import Flask, render_template, url_for, send_file
+from MySQLdb import *
+from passwd import db_passwd  # Set your password as db_passwd in passwd.py
+
+db = connect('GordonZhang.mysql.pythonanywhere-services.com', 'GordonZhang', db_passwd, 'GordonZhang$website')
+cursor = db.cursor()
+
+cursor.execute('SELECT * FROM projects')
+projects_list = cursor.fetchall()
+projects = list(projects_list)
 
 app = Flask(__name__)
-
-projects_list = {
-        'tkMarker | A Markdown editor': ' https://gordonzhang.pythonanywhere.com/projects/tkMarker/',
-        'GordonZhang2024/website | The source files of this website': 'https://github.com/GordonZhang2024/website/',
-        'xss shield | A python library which is used to stop your website from being attacked.': 'https://pypi.org/project/xss-shield/'
-}
 
 @app.route('/')
 def index():
@@ -27,4 +30,3 @@ def robotstxt():
 @app.route('/sitemap.xml')
 def sitemap():
     return send_file('sitemap.xml')
-    
