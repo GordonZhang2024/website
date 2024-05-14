@@ -31,6 +31,8 @@ nav a {
 
 
 .info {
+    position: fixed;
+    z-index: 100;
     border: solid;
     border-width: 1px;
     border-radius: 5px;
@@ -48,13 +50,29 @@ nav a {
     font-size: 20px;
 }
 
-.pinned_projects {
-    fload: center;
+
+.about_gzhang {
+    float: center;
 }
+
 
 
 footer {
     background: #00BFFF;
     color: white;
     border-radius: 5px;
+}
+
+.lang-icon {
+    width:75px;
+    height: 75px;
+}
+
+.fedora-logo {
+    width: 25%;
+    height: 25%;
+}
+
+.news {
+    padding: 20px;
 }

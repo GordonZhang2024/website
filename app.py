@@ -5,6 +5,11 @@ from passwd import db_passwd  # Set your password as db_passwd in passwd.py
 db = connect('GordonZhang.mysql.pythonanywhere-services.com', 'GordonZhang', db_passwd, 'GordonZhang$website')
 cursor = db.cursor()
 
+cursor.execute('SELECT * FROM projects')
+projects_list = cursor.fetchall()
+projects = list(projects_list)
+lenth = len(projects_list)
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -13,10 +18,6 @@ def index():
 
 @app.route('/projects/')
 def projects():
-    cursor.execute('SELECT * FROM projects')
-    projects_list = cursor.fetchall()
-    projects = list(projects_list)
-    lenth = len(projects_list)
     return render_template('projects.html', projects_list=projects_list, lenth=lenth)
 
 @app.route('/projects/tkMarker/')
