@@ -1,5 +1,5 @@
 html {
-    font-family: Sans-serif;
+    font-family: Courier;
 }
 
 a {
@@ -50,7 +50,6 @@ nav a {
     font-size: 20px;
 }
 
-
 .about_gzhang {
     float: center;
 }
@@ -64,8 +63,8 @@ footer {
 }
 
 .lang-icon {
-    width:75px;
-    height: 75px;
+    width: 5%;
+    height: 5%;
 }
 
 .fedora-logo {
@@ -75,4 +74,14 @@ footer {
 
 .news {
     padding: 20px;
+}
+
+hr {
+    color: #0250bb;
+    width: 75%;
+    height: 125%;
+}
+
+.github-link {
+    color: white;
 }
