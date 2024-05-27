@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from MySQLdb import *
 from passwd import *
 
